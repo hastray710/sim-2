@@ -1,0 +1,828 @@
+{
+    "msg": "操作成功",
+    "code": 200,
+    "data": [
+        {
+            "path": "/",
+            "hidden": false,
+            "component": "Layout",
+            "children": [
+                {
+                    "name": "Iotlinkindex",
+                    "path": "iotlinkindex",
+                    "hidden": true,
+                    "component": "Iotlinkindex",
+                    "meta": {
+                        "title": "关于IoTLink",
+                        "icon": "button",
+                        "noCache": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Card",
+            "path": "/card",
+            "hidden": false,
+            "redirect": "noRedirect",
+            "component": "Layout",
+            "alwaysShow": true,
+            "meta": {
+                "title": "通信管理",
+                "icon": "excel",
+                "noCache": false
+            },
+            "children": [
+                {
+                    "name": "Card",
+                    "path": "card",
+                    "hidden": false,
+                    "component": "yunze/flowcard/card/index",
+                    "meta": {
+                        "title": "单卡管理",
+                        "icon": "date",
+                        "noCache": false
+                    }
+                },
+                {
+                    "name": "CardSetting",
+                    "path": "cardSetting",
+                    "hidden": true,
+                    "component": "yunze/flowcard/cardSetting/index",
+                    "meta": {
+                        "title": "物联卡设置",
+                        "icon": "system",
+                        "noCache": false
+                    }
+                },
+                {
+                    "name": "Diagnosis",
+                    "path": "diagnosis",
+                    "hidden": true,
+                    "component": "yunze/flowcard/diagnosis/index",
+                    "meta": {
+                        "title": "物联卡诊断",
+                        "icon": "druid",
+                        "noCache": false
+                    }
+                },
+                {
+                    "name": "TariffGroup",
+                    "path": "TariffGroup",
+                    "hidden": true,
+                    "redirect": "noRedirect",
+                    "component": "ParentView",
+                    "alwaysShow": true,
+                    "meta": {
+                        "title": "物联卡资费",
+                        "icon": "button",
+                        "noCache": false
+                    },
+                    "children": [
+                        {
+                            "name": "ApplicationforRenewal",
+                            "path": "applicationforRenewal",
+                            "hidden": false,
+                            "component": "yunze/flowcard/applicationforRenewal/index",
+                            "meta": {
+                                "title": "续费进度",
+                                "icon": "cardMaturity",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "TariffGroup",
+                            "path": "tariffGroup",
+                            "hidden": false,
+                            "component": "yunze/flowcard/tariffGroup/index",
+                            "meta": {
+                                "title": "平台资费",
+                                "icon": "validCode",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "AgentTariffGroup",
+                            "path": "agentTariffGroup",
+                            "hidden": false,
+                            "component": "yunze/flowcard/tariffGroup/agent",
+                            "meta": {
+                                "title": "客户资费",
+                                "icon": "validCode",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "RechargeTariff",
+                            "path": "rechargeTariff",
+                            "hidden": false,
+                            "component": "yunze/flowcard/rechargeTariff/index",
+                            "meta": {
+                                "title": "资费订购",
+                                "icon": "money",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Flow",
+                            "path": "flow",
+                            "hidden": false,
+                            "component": "yunze/flowcard/card/cardFlow",
+                            "meta": {
+                                "title": "订购历史",
+                                "icon": "cardActivation",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Flowhis",
+                            "path": "flowhis",
+                            "hidden": true,
+                            "component": "yunze/flowcard/card/cardFlowHis",
+                            "meta": {
+                                "title": "用量详情",
+                                "icon": "monitor",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Offeringinfolist",
+                            "path": "offeringinfolist",
+                            "hidden": false,
+                            "component": "yunze/flowcard/offeringinfolist/index",
+                            "meta": {
+                                "title": "上游已订购套餐",
+                                "icon": "post",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Offeringinfo",
+                            "path": "offeringinfo",
+                            "hidden": false,
+                            "component": "yunze/flowcard/offeringinfo/index",
+                            "meta": {
+                                "title": "上游资费组管理",
+                                "icon": "button",
+                                "noCache": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Channel",
+                    "path": "channel",
+                    "hidden": true,
+                    "redirect": "noRedirect",
+                    "component": "ParentView",
+                    "alwaysShow": true,
+                    "meta": {
+                        "title": "物联卡通道",
+                        "icon": "tree",
+                        "noCache": false
+                    },
+                    "children": [
+                        {
+                            "name": "CardRoute",
+                            "path": "cardRoute",
+                            "hidden": false,
+                            "component": "yunze/API/cardRoute/index",
+                            "meta": {
+                                "title": "通道管理",
+                                "icon": "cascader",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Polling",
+                            "path": "polling",
+                            "hidden": false,
+                            "component": "yunze/API/polling/index",
+                            "meta": {
+                                "title": "通道轮询",
+                                "icon": "online",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "UpSteam",
+                            "path": "upSteam",
+                            "hidden": false,
+                            "component": "yunze/API/upStream/index",
+                            "meta": {
+                                "title": "上游集团群组",
+                                "icon": "peoples",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "MemberGroup",
+                            "path": "memberGroup",
+                            "hidden": false,
+                            "component": "yunze/API/memberGroup/index",
+                            "meta": {
+                                "title": "群组成员信息",
+                                "icon": "Ip",
+                                "noCache": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Warehouse",
+            "path": "/warehouse",
+            "hidden": false,
+            "redirect": "noRedirect",
+            "component": "Layout",
+            "alwaysShow": true,
+            "meta": {
+                "title": "流量池管理",
+                "icon": "tab",
+                "noCache": false
+            },
+            "children": [
+                {
+                    "name": "CardSetmeal",
+                    "path": "cardSetmeal",
+                    "hidden": false,
+                    "component": "yunze/flowcard/cardSetmeal/index",
+                    "meta": {
+                        "title": "流量池管理",
+                        "icon": "used",
+                        "noCache": false
+                    }
+                },
+                {
+                    "name": "Commodity",
+                    "path": "commodity",
+                    "hidden": true,
+                    "redirect": "noRedirect",
+                    "component": "ParentView",
+                    "alwaysShow": true,
+                    "meta": {
+                        "title": "产品管理",
+                        "icon": "shopping",
+                        "noCache": false
+                    },
+                    "children": [
+                        {
+                            "name": "ProductCategory",
+                            "path": "productCategory",
+                            "hidden": false,
+                            "component": "yunze/commodity/prdCategory/index",
+                            "meta": {
+                                "title": "产品分类",
+                                "icon": "cascader",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Product",
+                            "path": "product",
+                            "hidden": false,
+                            "component": "yunze/commodity/product/index",
+                            "meta": {
+                                "title": "产品列表",
+                                "icon": "zip",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "BCommodity",
+                            "path": "BCommodity",
+                            "hidden": true,
+                            "component": "ParentView",
+                            "meta": {
+                                "title": "B端商品",
+                                "icon": "phone",
+                                "noCache": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Market",
+            "path": "/market",
+            "hidden": false,
+            "redirect": "noRedirect",
+            "component": "Layout",
+            "alwaysShow": true,
+            "meta": {
+                "title": "客户管理",
+                "icon": "server",
+                "noCache": false
+            },
+            "children": [
+                {
+                    "name": "Agent",
+                    "path": "agent",
+                    "hidden": false,
+                    "redirect": "noRedirect",
+                    "component": "ParentView",
+                    "alwaysShow": true,
+                    "meta": {
+                        "title": "账号管理",
+                        "icon": "peoples",
+                        "noCache": false
+                    },
+                    "children": [
+                        {
+                            "name": "Dept",
+                            "path": "dept",
+                            "hidden": false,
+                            "component": "system/dept/index",
+                            "meta": {
+                                "title": "企业管理",
+                                "icon": "tree",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "AgentUser",
+                            "path": "agentUser",
+                            "hidden": false,
+                            "component": "yunze/user/agentUser/index",
+                            "meta": {
+                                "title": "用户信息",
+                                "icon": "user",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "ApiAccount",
+                            "path": "apiAccount",
+                            "hidden": true,
+                            "component": "yunze/user/apiUser/index",
+                            "meta": {
+                                "title": "API账号",
+                                "icon": "api",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Role",
+                            "path": "role",
+                            "hidden": false,
+                            "component": "system/role/index",
+                            "meta": {
+                                "title": "角色管理",
+                                "icon": "peoples",
+                                "noCache": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Order",
+                    "path": "order",
+                    "hidden": true,
+                    "redirect": "noRedirect",
+                    "component": "ParentView",
+                    "alwaysShow": true,
+                    "meta": {
+                        "title": "订单管理",
+                        "icon": "chart",
+                        "noCache": false
+                    },
+                    "children": [
+                        {
+                            "name": "OrderAll",
+                            "path": "OrderAll",
+                            "hidden": false,
+                            "component": "yunze/order/ordeAll",
+                            "meta": {
+                                "title": "系统订单",
+                                "icon": "chart",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "OrderMoney",
+                            "path": "OrderMoney",
+                            "hidden": false,
+                            "component": "yunze/order/orderMoney",
+                            "meta": {
+                                "title": "金额订单",
+                                "icon": "money",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "OrderTariff",
+                            "path": "OrderTariff",
+                            "hidden": false,
+                            "component": "yunze/order/orderTariff",
+                            "meta": {
+                                "title": "资费订单",
+                                "icon": "size",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "OrderShopping",
+                            "path": "OrderShopping",
+                            "hidden": false,
+                            "component": "yunze/order/OrderShopping",
+                            "meta": {
+                                "title": "购物订单",
+                                "icon": "shopping",
+                                "noCache": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Loglog",
+            "path": "/loglog",
+            "hidden": true,
+            "redirect": "noRedirect",
+            "component": "Layout",
+            "alwaysShow": true,
+            "meta": {
+                "title": "自动化规则",
+                "icon": "guide",
+                "noCache": false
+            },
+            "children": [
+                {
+                    "name": "Cc",
+                    "path": "cc",
+                    "hidden": false,
+                    "component": "yunze/automation/cc/index",
+                    "meta": {
+                        "title": "规则管理",
+                        "icon": "email",
+                        "noCache": false
+                    }
+                },
+                {
+                    "name": "Ccurl",
+                    "path": "ccurl",
+                    "hidden": false,
+                    "component": "yunze/automation/ccurl/index",
+                    "meta": {
+                        "title": "推送配置",
+                        "icon": "upload",
+                        "noCache": false
+                    }
+                },
+                {
+                    "name": "Cchis",
+                    "path": "cchis",
+                    "hidden": false,
+                    "component": "yunze/automation/cchis/index",
+                    "meta": {
+                        "title": "推送记录",
+                        "icon": "form",
+                        "noCache": false
+                    }
+                }
+            ]
+        },
+        {
+            "name": "System",
+            "path": "/system",
+            "hidden": true,
+            "redirect": "noRedirect",
+            "component": "Layout",
+            "alwaysShow": true,
+            "meta": {
+                "title": "系统管理",
+                "icon": "system",
+                "noCache": false
+            },
+            "children": [
+                {
+                    "name": "Menu",
+                    "path": "menu",
+                    "hidden": false,
+                    "component": "system/menu/index",
+                    "meta": {
+                        "title": "菜单管理",
+                        "icon": "cascader",
+                        "noCache": false
+                    }
+                },
+                {
+                    "name": "Post",
+                    "path": "post",
+                    "hidden": true,
+                    "component": "system/post/index",
+                    "meta": {
+                        "title": "岗位管理",
+                        "icon": "post",
+                        "noCache": false
+                    }
+                },
+                {
+                    "name": "Dict",
+                    "path": "dict",
+                    "hidden": false,
+                    "component": "system/dict/index",
+                    "meta": {
+                        "title": "字典管理",
+                        "icon": "dict",
+                        "noCache": false
+                    }
+                },
+                {
+                    "name": "Config",
+                    "path": "config",
+                    "hidden": false,
+                    "component": "system/config/index",
+                    "meta": {
+                        "title": "参数设置",
+                        "icon": "edit",
+                        "noCache": false
+                    }
+                },
+                {
+                    "name": "Notice",
+                    "path": "notice",
+                    "hidden": false,
+                    "component": "system/notice/index",
+                    "meta": {
+                        "title": "通知公告",
+                        "icon": "message",
+                        "noCache": false
+                    }
+                },
+                {
+                    "name": "Log",
+                    "path": "log",
+                    "hidden": false,
+                    "redirect": "noRedirect",
+                    "component": "ParentView",
+                    "alwaysShow": true,
+                    "meta": {
+                        "title": "日志管理",
+                        "icon": "log",
+                        "noCache": false
+                    },
+                    "children": [
+                        {
+                            "name": "ExecutionTask",
+                            "path": "ExecutionTask",
+                            "hidden": false,
+                            "component": "yunze/flowcard/executionTask",
+                            "meta": {
+                                "title": "执行日志",
+                                "icon": "server",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Operlog",
+                            "path": "operlog",
+                            "hidden": false,
+                            "component": "monitor/operlog/index",
+                            "meta": {
+                                "title": "操作日志",
+                                "icon": "form",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Logininfor",
+                            "path": "logininfor",
+                            "hidden": false,
+                            "component": "monitor/logininfor/index",
+                            "meta": {
+                                "title": "登录日志",
+                                "icon": "logininfor",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "SysLog",
+                            "path": "sysLog",
+                            "hidden": false,
+                            "component": "yunze/system/sysLog/index",
+                            "meta": {
+                                "title": "系统日志",
+                                "icon": "skill",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "BatchBusiness",
+                            "path": "batchBusiness",
+                            "hidden": false,
+                            "component": "yunze/flowcard/batchBusiness/index",
+                            "meta": {
+                                "title": "批量业务受理",
+                                "icon": "druid",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "SmsbatchBusiness",
+                            "path": "smsbatchBusiness",
+                            "hidden": false,
+                            "component": "yunze/flowcard/smsbatchBusiness/index",
+                            "meta": {
+                                "title": "短信业务受理",
+                                "icon": "message",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Smslog",
+                            "path": "smslog",
+                            "hidden": false,
+                            "component": "yunze/flowcard/smslog/index",
+                            "meta": {
+                                "title": "短信日志",
+                                "icon": "button",
+                                "noCache": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Monitor",
+                    "path": "monitor",
+                    "hidden": false,
+                    "redirect": "noRedirect",
+                    "component": "ParentView",
+                    "alwaysShow": true,
+                    "meta": {
+                        "title": "系统监控",
+                        "icon": "monitor",
+                        "noCache": false
+                    },
+                    "children": [
+                        {
+                            "name": "Online",
+                            "path": "online",
+                            "hidden": false,
+                            "component": "monitor/online/index",
+                            "meta": {
+                                "title": "在线用户",
+                                "icon": "online",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Job",
+                            "path": "job",
+                            "hidden": false,
+                            "component": "monitor/job/index",
+                            "meta": {
+                                "title": "定时任务",
+                                "icon": "job",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Druid",
+                            "path": "druid",
+                            "hidden": false,
+                            "component": "monitor/druid/index",
+                            "meta": {
+                                "title": "数据监控",
+                                "icon": "druid",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Server",
+                            "path": "server",
+                            "hidden": false,
+                            "component": "monitor/server/index",
+                            "meta": {
+                                "title": "服务监控",
+                                "icon": "server",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Cache",
+                            "path": "cache",
+                            "hidden": false,
+                            "component": "monitor/cache/index",
+                            "meta": {
+                                "title": "缓存监控",
+                                "icon": "redis",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Error",
+                            "path": "error",
+                            "hidden": false,
+                            "component": "monitor/error/index",
+                            "meta": {
+                                "title": "轮询错误详情",
+                                "icon": "bug",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Group",
+                            "path": "group",
+                            "hidden": false,
+                            "component": "monitor/group/index",
+                            "meta": {
+                                "title": "轮询错误概要",
+                                "icon": "404",
+                                "noCache": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Tool",
+                    "path": "tool",
+                    "hidden": false,
+                    "redirect": "noRedirect",
+                    "component": "ParentView",
+                    "alwaysShow": true,
+                    "meta": {
+                        "title": "研发工具",
+                        "icon": "tool",
+                        "noCache": false
+                    },
+                    "children": [
+                        {
+                            "name": "Build",
+                            "path": "build",
+                            "hidden": false,
+                            "component": "tool/build/index",
+                            "meta": {
+                                "title": "表单构建",
+                                "icon": "build",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Gen",
+                            "path": "gen",
+                            "hidden": false,
+                            "component": "tool/gen/index",
+                            "meta": {
+                                "title": "代码生成",
+                                "icon": "code",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "Swagger",
+                            "path": "swagger",
+                            "hidden": false,
+                            "component": "tool/swagger/index",
+                            "meta": {
+                                "title": "系统1111接口",
+                                "icon": "swagger",
+                                "noCache": false
+                            }
+                        },
+                        {
+                            "name": "SpecialOperation",
+                            "path": "specialOperation",
+                            "hidden": false,
+                            "component": "yunze/specialOperation/index",
+                            "meta": {
+                                "title": "特殊操作",
+                                "icon": "system",
+                                "noCache": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AapIntegrated",
+                    "path": "AapIntegrated",
+                    "hidden": false,
+                    "redirect": "noRedirect",
+                    "component": "ParentView",
+                    "alwaysShow": true,
+                    "meta": {
+                        "title": "API集成",
+                        "icon": "Ip",
+                        "noCache": false
+                    },
+                    "children": [
+                        {
+                            "name": "Apifile",
+                            "path": "apifile",
+                            "hidden": false,
+                            "component": "tool/apifile/index",
+                            "meta": {
+                                "title": "API使用",
+                                "icon": "slider",
+                                "noCache": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

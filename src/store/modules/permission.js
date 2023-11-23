@@ -2,6 +2,7 @@ import { constantRoutes } from '@/router'
 import { getRouters } from '@/api/menu'
 import Layout from '@/layout/index'
 import ParentView from '@/components/ParentView';
+import myRouter from '@/router/myRouter.json'
 
 const permission = {
   state: {
@@ -36,7 +37,8 @@ const permission = {
     GenerateRoutes({ commit }) {
       return new Promise(resolve => {
         // 向后端请求路由数据
-        getRouters().then(res => {
+        // getRouters().then(res => {
+          const res = myRouter
           const sdata = JSON.parse(JSON.stringify(res.data))
           const rdata = JSON.parse(JSON.stringify(res.data))
           const sidebarRoutes = filterAsyncRouter(sdata)
@@ -48,7 +50,7 @@ const permission = {
           commit('SET_TOPBAR_ROUTES', sidebarRoutes)
           resolve(rewriteRoutes)
         })
-      })
+      // })
     }
   }
 }
